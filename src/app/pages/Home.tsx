@@ -1,6 +1,6 @@
 "use client";
 
-const Welcome = () => {
+const HomePage = (): JSX.Element => {
 	return (
 		<div>
 			<h1>Welcome</h1>
@@ -8,4 +8,4 @@ const Welcome = () => {
 	);
 };
 
-export default Welcome;
+export default HomePage;
