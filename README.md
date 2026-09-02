@@ -1,5 +1,9 @@
 # Getting Started with Create React App
 
+[![React](https://img.shields.io/badge/React-TypeScript-149ECA?logo=react&logoColor=white)](https://react.dev/)
+[![Create React App](https://img.shields.io/badge/Tooling-Create%20React%20App-09D3AC?logo=createreactapp&logoColor=white)](https://create-react-app.dev/)
+[![Last commit](https://img.shields.io/github/last-commit/fatmakahveci/react-ts-blog)](https://github.com/fatmakahveci/react-ts-blog/commits/main)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
