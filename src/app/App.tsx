@@ -7,7 +7,7 @@ import ProductDetailPage from "./pages/ProductDetail";
 import Products from "./pages/Products";
 import RootLayout from "./pages/Root";
 
-const router = createBrowserRouter([
+export const routes = [
 	{
 		path: "/",
 		element: <RootLayout />,
@@ -18,7 +18,9 @@ const router = createBrowserRouter([
 			{ path: "products/:productId", element: <ProductDetailPage /> },
 		],
 	},
-]);
+];
+
+const router = createBrowserRouter(routes);
 
 const App = (): JSX.Element => {
 	return <RouterProvider router={router} />;
