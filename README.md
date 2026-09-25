@@ -8,7 +8,9 @@ A React and TypeScript routing exercise with nested layouts, product detail rout
 
 ## Demo
 
-![Demo showing catalog filters, favorites, display preferences, and product sharing](demo.gif)
+[Open the live demo](https://fatmakahveci.github.io/react-ts-blog/)
+
+![Demo showing the home page, search, category and price filters, favorites, product sharing, list and grid views, and light and dark themes](demo.gif)
 
 ## Highlights
 
