@@ -17,8 +17,13 @@ documentation improvements, tests, and well-scoped features are welcome.
 2. Follow the setup and development instructions in the repository README.
 3. Keep changes focused and consistent with the existing code style.
 4. Add or update tests and documentation when behavior changes.
-5. Run the available lint, type-check, test, and build commands before opening
-   a pull request.
+5. Run `npm run format` to apply formatting, then `npm run check` before
+   opening a pull request. Use `npm run test:watch` during development.
+
+Use `nvm use` to select the version in `.nvmrc`. CI uses the same version.
+`npm run lint` checks code quality and formatting without editing files.
+`npm run test:coverage` produces an HTML report in `coverage/`. Coverage
+thresholds are enforced in CI; add behavior-focused tests when changing code.
 
 Use a short, descriptive branch name such as `fix/cart-total` or
 `feat/product-filter`. Write clear commit messages in the imperative mood and

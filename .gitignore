@@ -38,3 +38,8 @@ next-env.d.ts
 .next/
 .swc/
 .*.env
+
+# Browser test output
+/dist-e2e/
+/playwright-report/
+/test-results/
