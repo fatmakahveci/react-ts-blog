@@ -1,9 +1,14 @@
 import { render, screen } from "@testing-library/react";
 
-import HomePage from "./Home";
+import { MemoryRouter } from "react-router-dom";
+import HomePage from "./HomePage";
 
 test("renders the welcome heading", () => {
-  render(<HomePage />);
+  render(
+    <MemoryRouter>
+      <HomePage />
+    </MemoryRouter>,
+  );
 
   expect(screen.getByRole("heading", { name: "Welcome" })).toBeInTheDocument();
 });

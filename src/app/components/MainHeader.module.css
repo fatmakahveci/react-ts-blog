@@ -1,23 +1,87 @@
 .header {
-    max-width: 60rem;
-    margin: auto;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1.6rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  border-bottom: 1px solid var(--border);
 }
-
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 1.6rem;
+  font-weight: 650;
+  letter-spacing: -0.045em;
+  margin-right: auto;
+}
+.brandMark {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  border-radius: 10px;
+  font-family: var(--font-sans);
+  letter-spacing: -0.06em;
+}
+.brandDot {
+  color: var(--muted);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
 .list {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1.8rem;
 }
-
 .list a {
-    text-decoration: none;
-    color: var(--color-primary-400);
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0.5rem 0;
 }
-
 .list a:hover,
 .list a.active {
-    color: var(--color-primary-800);
-    text-decoration: underline;
+  color: var(--text);
+}
+.list a.active {
+  box-shadow: 0 2px var(--accent);
+}
+@media (max-width: 600px) {
+  .header {
+    padding: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .list {
+    gap: 1rem;
+  }
+  .brand {
+    font-size: 1.3rem;
+  }
+  .brandDot {
+    display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .header {
+    gap: 0.65rem;
+  }
+  .brand {
+    font-size: 1.15rem;
+    gap: 0.4rem;
+  }
+  .brandMark {
+    width: 28px;
+    height: 28px;
+  }
+  .list {
+    gap: 0.7rem;
+  }
+  .list a {
+    font-size: 0.75rem;
+  }
 }
